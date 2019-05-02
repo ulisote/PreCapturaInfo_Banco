@@ -1,0 +1,712 @@
+@font-face{
+	font-family: BentonSansBBVA-Medium;
+	src:url(../fuentes/BentonSansBBVA-Medium.otf);
+}
+@font-face{
+	font-family: BentonSansBBVA-Book;
+	src:url(../fuentes/BentonSansBBVA-Book.otf);
+}
+
+body{
+	margin:0 auto;
+	max-width: 768px;
+}
+canvas {
+        width: 480px;
+        height: 313px;
+        background-color: #f4f4f4;
+        display: inline-block;
+        position: fixed;
+        top: 250px;
+        left: 144px;
+        z-index: 2;
+
+    } 
+
+.header{
+	background-color:rgb(7,32,68);
+	height:64px;
+	position: relative;
+}
+.headersuccess{
+	background-color:#48AE64;
+	height:216px;
+	position: relative;
+	color:white;
+}
+.headersuccess img{
+	margin-left: 16px;
+}
+.successTitulo{
+	font-size: 26px;
+}
+.successSubtitulo{
+	font-size: 15px;
+	margin-top: 8px;
+}
+#successCheck{
+	width: 40px;
+	height: 40px;
+	display: block;
+	margin-left: 16px;
+}
+.datosSuccess{
+	margin: 16px;
+}
+.headerContenido{
+	display: inline-block;
+	position: absolute;
+	right: 75px;
+	top: 20px;
+	font-size: 15px;
+	font-family: BentonSansBBVA-Book;
+	color: white;
+
+}
+.btnQRCancelar{
+	margin: 16px 24px;
+    display: inline-block;
+    float: left;
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #1973B8;
+    border: 1px solid #1973B8;
+}
+.btnQRAceptar{
+	margin: 16px 24px;
+    display: inline-block;
+    float: right;
+    padding: 16px 32px;
+    font-size: 16px;
+    background-color: #1973B8;
+    color: #fff;
+}
+    
+
+
+.modal-content video{
+	width: 500px;
+    transform: scaleX(-1);
+    margin: 12px 22px;
+}
+#hola{
+	    display: inline-block;
+    padding: 12px;
+    margin: 8px 150px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.navLogo{
+	display: inline-block;
+	margin: 10px;
+}
+.navCerrar{
+
+	background-color: rgb(0,158,158);
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	font-family: BentonSansBBVA-Medium;
+	color: white;
+	text-decoration: none;
+	padding: 22px 25px;
+}
+.iniContenido{
+	background-color: #043263;
+	height: 100%;
+	font-family: BentonSansBBVA-Medium;
+}
+.iniTitulos{
+	color: white;
+	text-align: center;
+	padding-top: 88px;
+}
+.iniTitulo{
+	font-size: 48px;
+}
+.iniSubtitulo{
+	margin: 48px 0 39px;
+	font-size: 32px;
+}
+.iniTarjetas{
+	margin:44px;
+}
+.iniCard{
+	margin:16px;
+	display: inline-block;
+	background-color: white;
+	text-align: center;
+	border-radius: 2px;
+	text-decoration: none;
+}
+.iniCard img{
+	height: 114px;
+	width: 114px;
+	margin: 24px 95px 14px;
+}
+.iniCardContenido{
+	color: #1973B8;
+	font-size: 15px;
+	margin-bottom: 16px;
+}
+.chequecaja{
+	font-size: 32px;
+	font-family: BentonSansBBVA-Medium;
+}
+.chequeContenido{
+	font-family: BentonSansBBVA-book;
+	margin: 16px;
+}
+.chequeFirstOption{
+	text-align: left;
+	margin-top: 12px;
+}
+.chequeFirstOption .inp{
+	margin: 0;
+}
+.chequeCaja{
+	font-family: BentonSansBBVA-Medium;
+	display: inline-block;
+	padding: 23px 112px;
+	color:#004481;
+	border-bottom: 1px solid #004481;
+}
+
+.chequeCertificado{
+display: inline-block;
+padding: 23px 112px;
+color:#666666;
+}
+.chequeDatosCliente1{
+margin: 20px 0 12px;
+	font-family: BentonSansBBVA-Medium;
+	font-size: 20px;
+}
+.chequeDatosCliente{
+	margin: 12px 0 8px;
+	font-family: BentonSansBBVA-Medium;
+	font-size: 20px;
+}
+.espacio{
+	width:20px;
+	display: inline-block;
+}
+.inenum{
+	color: #1973B8;
+    padding: 6px 12px;
+    margin-left: 24px;
+    font-family: BentonSansBBVA-Medium;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.sinMargin{
+	margin:0 !important;
+}
+
+.modalEntiendo{
+	display: inline-block;
+	 background-color: #1973B8;
+	 color: white;
+  padding: 18px 32px;
+  float: right;
+  margin-right: 32px;
+}
+
+.firma{
+	border:1px solid #BDBDBD;
+}
+.firma img{
+	width: 18px;
+	height: 22px;
+	display: inline-block;
+	margin: 17px 19px;
+	float: left;
+}
+.contfirma{
+	display: inline-block;
+	padding: 20px 0;
+	color: #121212;
+	font-size: 15px;
+}
+.capturar{
+	display: inline-block;
+	margin: 20px 24px;
+	float: right;
+	color: #1973B8;
+}
+
+.successBody{
+	margin:16px;
+	color: #121212;
+	font-family: "BentonSansBBVA-Book";
+
+}
+.sucFolio{
+	margin-top: 40px;
+	font-size: 15px;
+	font-family: "BentonSansBBVA-Medium";
+}
+.sucFolioNum{
+	font-size: 26px;
+	margin-top: 8px;
+}
+.sucLine{
+	display: inline-block;
+	width: 48px;
+	height: 24px;
+	border-bottom: 1px solid lightgrey;
+}
+.sucTabla{
+	margin-top: 24px;
+}
+.sucFirma{
+	margin-top: 26px;
+	border: 1px solid #BDBDBD;
+}
+.sucFirma img{
+
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+    margin: 17px 19px;
+    float: left;
+}
+.sucFirmadesc{
+	color: #121212;
+	font-family: "BentonSansBBVA-Medium";
+	    display: inline-block;
+    padding: 20px 0;
+}
+.sucCapturada{
+	color: #666666;
+	margin-left:48px;
+}
+.successFirma{
+	margin: 16px 20px;
+	height: 122px;
+	background-color: #F4F4F4;
+}
+.successFirma img{
+	    width: 280px;
+    height: 140px;
+    float: right;
+    margin-right: 200px;
+}
+.sucBoton{
+	margin-top: 98px;
+}
+.sucBoton a{
+	text-decoration: none;
+	float: right;
+	background-color: #1973B8;
+    color: white;
+    padding: 18px 64px;
+
+}
+/***************************** Input TEXT ***********************/
+
+.contenedor {
+	font-family: BentonSansBBVA-Book;
+}
+
+.inp2{
+	margin: 18px 0;
+    max-width: none !important;
+
+}
+.inp {
+	margin-bottom: 18px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 352px;
+  color: #666666;
+  background-color: #f8f8f8;
+}
+.inp .label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #07f;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  transition: all 0.15s ease;
+}
+.inp input[type=text] {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 16px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+    box-sizing: border-box;
+
+}
+
+.inp input[type=text]:not(:placeholder-shown) + span {
+    color: #5a667f;
+    transform: translateY(-26px) scale(0.75);
+ }
+.inp input[type=text]:focus {
+  background: none;
+  outline: none;
+}
+.inp input[type=text]:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input[type=text]:focus + span + .border {
+  transform: scaleX(1);
+}
+
+.inp input[type=number] {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 12px 16px;
+  height: 48px;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid #c8ccd4;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+    box-sizing: border-box;
+
+}
+
+.inp input[type=number]:not(:placeholder-shown) + span {
+    color: #5a667f;
+    transform: translateY(-26px) scale(0.75);
+ }
+.inp input[type=number]:focus {
+  background: none;
+  outline: none;
+}
+.inp input[type=number]:focus + span {
+  color: #07f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input[type=number]:focus + span + .border {
+  transform: scaleX(1);
+}
+
+/******************************Radio Button*******************************/
+.radiosbutton{
+	margin-top: 8px;
+	display: inline-block;
+	width: 100%;
+	max-width: 352px;
+}
+.contenidoRadios{
+	font-size: 13px;
+	margin: 8px 0;
+	color: #121212 ;
+}
+
+.radioCheck {
+  display: inline-block;
+  position: relative;
+  padding:6px 0 0 33px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  user-select: none;
+  color:#121212;
+}
+
+.radioCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border:1px solid #888;
+}
+
+/*.radioCheck input:checked ~ .checkmark {
+  background-color: red;
+}*/
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.radioCheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radioCheck .checkmark:after {
+ 	top: 6px;
+	left: 6px;
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #004481;
+}
+.borrarCampo{
+	display: none;
+    position: absolute;
+    right: 0;
+    margin: 4px;
+    padding: 0 15px;
+    color: #1973B8;
+        font-family: BentonSansBBVA-Medium;
+    font-size: 36px;
+
+}
+.codigoQR{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    margin: 7px;
+    padding: 0 15px;
+    color: #1973B8;
+    font-family: BentonSansBBVA-Medium;
+    font-size: 36px;
+    height: 32px;
+}
+
+
+/*********************************** MODAL ******************************************/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 220px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(4,50,99,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+     width: 544px;
+    height: 529px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+.modal-content-confir{
+	position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+     width: 544px;
+    height: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #1973B8;
+  padding: 6px 12px;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modalTitulo{
+	font-family: "BentonSansBBVA-Medium";
+	font-size: 26px;
+	color: #1A1A1A;
+	margin: 72px 32px 0;
+}
+.modalINEdesc{
+	display: inline-block;
+	font-
+	size: 15px;
+	color: #1A1A1A;
+	margin: 24px 32px 0;
+	width: 470px;
+	line-height: 24px;
+}
+.modalImgs{
+	margin: 36px 32px;
+	display: inline-block;
+}
+.modaImg1{
+	display: inline-block;
+}
+
+.modaImg2{
+	margin-left: 24px;
+	display: inline-block;
+}
+.modalImgDes{
+	color: #666666;
+	font-size: 15px;
+}
+
+/********** Tabla****/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border:none;
+  font-size: 16px;
+  color: #121212;
+}
+
+tr td:nth-of-type(2){
+	text-align: right;
+}
+
+.modalText{
+	    position: absolute;
+    bottom: 0;
+	}
+.modalRepFirma{
+	color: #1973B8;
+    display: inline-block;
+    margin: 56px 32px;
+}
+.modalCapturar{
+	display: inline-block;
+    margin-left: 178px;
+    background-color: #1973B8;
+    color: white;
+    padding: 28px 52px;
+}
+.firmaCapturada{
+	display: flex;
+	margin:1px;
+}
+.firmaCapturada img{
+	width: 322px;
+	height: 122px;
+	margin: 2px auto;
+}
+.chequeCondición{
+	font-size: 13px;
+	color: #666;
+	margin: 16px 50px;
+}
+.chequeBotones{
+
+}
+.chequeCancelar{
+color: #1973B8 ;
+font-size: 15px;
+display:inline-block;
+padding: 30px 50px 30px 16px;
+text-decoration: none;
+}
+.chequeContinuar{
+	display: none;
+	background-color: #1973B8 ;
+	padding: 30px 50px;
+	font-size: 15px;
+	color: white;
+	float: right;
+}
+.chequeDes{
+display: inline-block;
+	background-color: #E9E9E9 ;
+	padding: 30px 50px;
+	font-size: 15px;
+	color: #BDBDBD ;
+	float: right;
+}
+
+.modalcondicioncontenido{
+	color: #121212;
+	text-align: center;
+}
+.mod_con_titulo{
+	margin: 82px 30px 8px;
+    text-align: center;
+    font-size: 26px;
+    font-family: "BentonSansBBVA-Medium";
+}
+.mod_con_subtitulo{
+margin: 8px 32px;
+    text-align: center;
+    font-size: 16px;
+}
+.modalContinuar{
+	display: block;
+	text-align: center;
+	width: 180px;
+	background-color: #1973B8 ;
+	padding: 30px 50px;
+	font-size: 15px;
+	color: white;
+	margin: 32px auto 0;
+	text-decoration: none;
+}
+.modalRegresar{
+	text-align: center;
+color: #1973B8 ;
+font-size: 15px;
+padding: 30px 50px;
+}
+
+
+
+
+

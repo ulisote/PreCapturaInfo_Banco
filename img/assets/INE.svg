@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="150px" viewBox="0 0 224 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Microilustration_INEocr</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="224" height="150" rx="4"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Happy-path_Cheque-de-caja_Modal-IFE-/-INE" transform="translate(-398.000000, -515.000000)">
+            <g id="Group-19" transform="translate(112.000000, 303.000000)">
+                <g id="Microilustration_INEocr" transform="translate(286.000000, 212.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask"></g>
+                    <rect id="background" fill="#E9E9E9" mask="url(#mask-2)" x="0" y="0" width="224" height="150"></rect>
+                    <rect id="magnetic-band" fill="#000000" mask="url(#mask-2)" x="0" y="10" width="224" height="30"></rect>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(6.000000, 83.000000)">
+                            <rect id="background" fill="#FFFFFF" fill-rule="evenodd" transform="translate(163.000000, 24.000000) rotate(-360.000000) translate(-163.000000, -24.000000) " x="114" y="12" width="98" height="24"></rect>
+                            <rect id="background-copy" fill="#D3D3D3" fill-rule="evenodd" transform="translate(57.000000, 24.000000) rotate(-360.000000) translate(-57.000000, -24.000000) " x="0" y="12" width="114" height="24"></rect>
+                            <rect id="background-copy-2" fill="#D3D3D3" fill-rule="evenodd" transform="translate(106.000000, 49.000000) rotate(-360.000000) translate(-106.000000, -49.000000) " x="0" y="37" width="212" height="24"></rect>
+                            <text id="1234567890123" fill="none" transform="translate(163.000000, 24.500000) rotate(-360.000000) translate(-163.000000, -24.500000) " font-family="BentonSansBBVA-Medium, Benton Sans BBVA" font-size="11" font-weight="400" line-spacing="11">
+                                <tspan x="121" y="32" fill="#121212">1234567890123</tspan>
+                            </text>
+                            <text id="IDMEX12345678&lt;&lt;" fill="none" transform="translate(55.500000, 24.500000) rotate(-360.000000) translate(-55.500000, -24.500000) " font-family="BentonSansBBVA-Medium, Benton Sans BBVA" font-size="11" font-weight="400" line-spacing="11">
+                                <tspan x="4.777" y="30.231" fill="#E9E9E9">IDMEX12345678&lt;&lt;</tspan>
+                            </text>
+                            <text id="GOMEZ&lt;VELAZQUEZ&lt;MARG" fill="none" transform="translate(104.500000, 49.500000) rotate(-360.000000) translate(-104.500000, -49.500000) " font-family="BentonSansBBVA-Medium, Benton Sans BBVA" font-size="11" font-weight="400" line-spacing="11">
+                                <tspan x="4.657" y="55.231" fill="#E9E9E9">GOMEZ&lt;VELAZQUEZ&lt;MARGARITA&lt;&lt;</tspan>
+                            </text>
+                            <text id="OCR-Copy" fill="none" font-family="BentonSansBBVA-Medium, Benton Sans BBVA" font-size="6" font-weight="400" line-spacing="6">
+                                <tspan x="155.953" y="7.126" fill="#121212">OCR</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

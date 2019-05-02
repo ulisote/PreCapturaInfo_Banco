@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cheque de Caja</title>
+	<link rel="stylesheet" href="../css/estilos.css">
+	<script type="text/javascript" src="../js/qr.js" ></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	<header class="header">
+
+			<img class="navLogo" src="../img/logo.png" width="80px" height="45px" alt="">
+			<div class="headerContenido">
+				Cheque de Caja
+			</div>
+			<a class="navCerrar" href="../index.html" title="">X</a>
+	</header>
+	<form action="success.html" method="get" accept-charset="utf-8">
+		
+	
+	<div class="chequeContenido">
+		<div class="chequecaja">
+				Cheque de Caja
+			</div>
+		<div class="chequeFirstOption">
+			<label for="ti1" class="inp"><a class="borrarCampo" id="li1">&times;</a>
+				<input type="text" id="ti1" placeholder="&nbsp;" name="tturno">
+				<span class="label">Turno</span>
+				<span class="border"></span>
+		</label>
+		<!-- 	<div class="chequeCaja">
+				Cheque de caja
+			</div>
+			
+			<div class="chequeCertificado">
+				Cheque de certificado
+			</div>-->
+		</div> 
+		
+		
+		<div class="contenedor">
+			<div class="chequeDatosCliente1">
+				Datos del cliente
+			</div>
+			
+			
+			<label for="ci1" class="inp"><a class="borrarCampo" id="li2">&times;</a>
+				<input type="text" id="ci1" placeholder="&nbsp;" name="cliname">
+				<span class="label">Nombre(s)</span>
+				<span class="border"></span>
+			</label>
+			<div class="espacio">
+				
+			</div>
+			<label for="ci2" class="inp"><a class="borrarCampo" id="li3">&times;</a>
+				<input type="text" id="ci2" placeholder="&nbsp;" name="clifirst">
+				<span class="label">Primer apellido</span>
+				<span class="border"></span>
+			</label>
+			
+			<label for="ci3" class="inp"><a class="borrarCampo" id="li4">&times;</a>
+				<input type="text" id="ci3" placeholder="&nbsp;" name="clisecond">
+				<span class="label">Segundo apellido</span>
+				<span class="border"></span>
+			</label>
+			<div class="espacio">
+				
+			</div>
+			<label for="pa1" class="inp" id="pagNum"><a class="borrarCampo" id="li9">&times;</a>
+				<input type="number" id="pa1" placeholder="&nbsp;" name="cuenta">
+				<span class="label">Número de cuenta</span>
+				<span class="border"></span>
+			</label>
+			
+			<label for="ci4" class=" sinMargin inp "><img src="../img/assets/QRIcon_Active.svg" class="codigoQR" id="btnQr">
+				<input type="number" id="ci4" placeholder="&nbsp;">
+				<span class="label">Número OCR de INE/IFE</span>
+				<span class="border"></span>
+			</label>
+			<div>
+				<div class="inenum" id="myBtn">
+				¿Dónde está este número?
+				
+
+			</div>
+			</div>
+			
+
+			
+			<!-- Modal QR-->
+			<div id="modalQr" class="modal">
+			  <div class="modal-content">
+			  	<span class="close" id="closeQr">&times;</span>
+			  	<video id="preview"></video>
+				<input type="text" name="" id="hola">
+				<div class="botonesCamara">
+			  	<div class="btnQRCancelar" id="btnQRCancelar">Cancelar</div>
+			  	<div class="btnQRAceptar" id="btnQRAceptar">Aceptar</div>
+			  </div>
+			  </div>
+
+			</div>
+				
+
+			<!-- Modal content-->
+
+			<div id="myModal" class="modal">
+
+			  <!-- Modal content -->
+			  <div class="modal-content">
+			  	<span class="close" id="close">&times;</span>
+			      <div class="modalTitulo">
+			      	Número OCR de INE / IFE
+			      </div>
+			      <div class="modalINEdesc">
+			      	El OCR es un número identificador de 13 dígitos que se encuentra en el reverso de tu crédencial y puede estar en dos lugares diferentes:
+			      </div>
+			      <div class="modalImgs">
+			      	<div class="modaImg1">
+			      		<img src="../img/assets/IFE.svg">
+			      		<p class="modalImgDes">Opción 1</p>
+			      	</div>
+			      	<div class="modaImg2">
+			      		<img src="../img/assets/INE.svg">
+			      		<p class="modalImgDes">Opción 2</p>
+			      	</div>
+			      </div>
+			 	<div class="modalEntiendo" id="modalEntiendo">Entiendo</div>
+			  </div>
+			</div>
+
+		      
+			<div class="chequeDatosCliente">
+				Datos del beneficiario
+			</div>
+			<div class="radiosbutton">
+				<div class="contenidoRadios">
+					Segmento
+				</div>
+				<label class="radioCheck" id="rFisica">Persona física
+				  <input type="radio" id="fisica" checked="checked" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<div class="espacio">
+				
+			</div>
+				<label class="radioCheck" id="rMoral">Moral
+				  <input id="moral" type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				
+			</div>
+			<div class="espacio">
+				
+			</div>
+			<label for="cn1" class="inp" id="benNom"><a class="borrarCampo" id="li6">&times;</a>
+				<input type="text" id="cn1" placeholder="&nbsp;" name="benname">
+				<span class="label">Nombre(s)</span>
+				<span class="border"></span>
+			</label>
+			<label for="cn2" class="inp" id="benApe1"><a class="borrarCampo" id="li7">&times;</a>
+				<input type="text" id="cn2" placeholder="&nbsp;" name="benfirst">
+				<span class="label">Primer apellido</span>
+				<span class="border"></span>
+			</label>
+			<div class="espacio">
+				
+			</div>
+			<label for="cn3" class="inp" id="benApe2"><a class="borrarCampo" id="li8">&times;</a>
+				<input type="text" id="cn3" placeholder="&nbsp;" name="bensecond">
+				<span class="label">Segundo apellido</span>
+				<span class="border"></span>
+			</label>
+			<label for="cn4" class="inp2 inp" id="razonso" style="display: none;">
+				<input type="text" id="cn4" placeholder="&nbsp;">
+				<span class="label">Nombre o razón social</span>
+				<span class="border"></span>
+			</label>
+			<div class="chequeDatosCliente">
+				Importe
+			</div>
+			<!-- <div class="radiosbutton">
+				<div class="contenidoRadios">
+					Forma de pago
+				</div>
+				<label class="radioCheck">Tarjeta de débito
+				  <input type="radio" id="fisica" checked="checked" name="radio2">
+				  <span class="checkmark"></span>
+				</label>
+				<div class="espacio">
+				
+			</div>
+				<label class="radioCheck">Cuenta
+				  <input id="moral" type="radio" name="radio2">
+				  <span class="checkmark"></span>
+				</label>
+				
+			</div> -->
+			
+			
+			<label for="pa2" class="inp" id="pagMon"><a class="borrarCampo" id="li10">&times;</a>
+				<input type="text" id="pa2" placeholder="&nbsp;" name="monto">
+				<span class="label">Importe</span>
+				<span class="border"></span>
+			</label>
+			<div class="chequeDatosCliente">
+				Firma
+			</div>
+			<div class="firma" id=btnFirma>
+				<img src="../img/assets/icon/medium_blue/firm.svg">
+				<div class="contfirma">
+					Firma
+				</div>
+				<div class="capturar" id="capturarFirma">
+					Capturar
+				</div>
+				<div class="capturar" style="display:none" id="eliminarFirma">
+					Eliminar
+				</div>
+				<div class="firmaCapturada" id="firmaCapturada">
+					
+				</div>
+			</div>
+			<div class="chequeCondición">
+				Al firmar, confirmas que los datos son correctos.
+			</div>
+
+			<div class="chequeBotones">
+				<a href="../index.html"><div class="chequeCancelar"><- Cancelar</div></a>
+				<div class="chequeContinuar" id="btncondicion">Continuar</div>
+				<div class="chequeDes" id="desabilitado">Continuar</div>
+				
+			</div>
+			<!-- Modal content -->
+			<div id="traerCanvas">
+				<!--<canvas id="pizarra"></canvas>-->
+			</div>
+				
+
+				<div id="modalFirma" class="modal">
+				  <div class="modal-content">
+				  	<span class="close" id="closeFirma">&times;</span>
+				   <div class="modalText">
+				  	<div class="modalRepFirma" id="repetirFirma">Repetir firma</div>
+				  	<div class="modalCapturar" id="canCapturar">Capturar</div>
+
+				  </div>
+				  </div>
+				  
+				</div>
+
+				<!-- otro modal de condiciones-->
+				<div id="modalcondicion" class="modal">
+				  <div class="modal-content-confir">
+				  	<span class="close" id="closecondicion">&times;</span>
+				   <div class="modalcondicioncontenido">
+				   		<div class="mod_con_titulo">Confirmación</div>
+				   		<div class="mod_con_subtitulo">Al continuar, aceptas que revisaste y confirmaste que los datos ingresados son correctos. Recuerda que si alguno de los datos es incorrecto tendrás que realizar el trámite nuevamente y cubrir los cargos relacionados.</div>
+				   	</div>
+			
+							<input type="submit" class="modalContinuar" value="Continuar">
+				  	
+				  	<div class="modalRegresar" id="modalRegresar">Regresar</div>
+
+				  </div>
+				  </div>
+				  
+				</div>
+
+
+		</div>
+	</div>
+</form>
+<script src="../js/script.js" type="text/javascript"></script>
+</body>
+</html>
